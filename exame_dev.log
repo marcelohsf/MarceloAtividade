@@ -1,0 +1,54 @@
+2024-09-27T00:34:01.589-03:00  INFO 2452 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : Starting MedicoApplication using Java 17.0.10 with PID 2452 (C:\Users\Victor\Desktop\medico\target\classes started by Vitinho in C:\Users\Victor\Desktop\medico)
+2024-09-27T00:34:01.597-03:00  INFO 2452 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : The following 1 profile is active: "dev"
+2024-09-27T00:34:01.661-03:00  INFO 2452 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27T00:34:01.661-03:00  INFO 2452 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27T00:34:02.131-03:00  INFO 2452 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-27T00:34:02.185-03:00  INFO 2452 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-09-27T00:34:02.917-03:00  INFO 2452 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-27T00:34:02.929-03:00  INFO 2452 --- [medico] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-27T00:34:02.929-03:00  INFO 2452 --- [medico] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27T00:34:02.966-03:00  INFO 2452 --- [medico] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-27T00:34:02.966-03:00  INFO 2452 --- [medico] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2024-09-27T00:34:02.998-03:00  INFO 2452 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-27T00:34:03.205-03:00  INFO 2452 --- [medico] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f96844a
+2024-09-27T00:34:03.211-03:00  INFO 2452 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-27T00:34:03.222-03:00  INFO 2452 --- [medico] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/ATVMedico'
+2024-09-27T00:34:03.337-03:00  INFO 2452 --- [medico] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-27T00:34:03.419-03:00  INFO 2452 --- [medico] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-27T00:34:03.461-03:00  INFO 2452 --- [medico] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-27T00:34:03.761-03:00  INFO 2452 --- [medico] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-27T00:34:04.522-03:00  INFO 2452 --- [medico] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-27T00:34:04.531-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : drop table if exists medico cascade
+2024-09-27T00:34:04.538-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : drop table if exists paciente cascade
+2024-09-27T00:34:04.538-03:00  WARN 2452 --- [medico] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-27T00:34:04.538-03:00  WARN 2452 --- [medico] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "paciente" does not exist, skipping
+2024-09-27T00:34:04.538-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_medico
+2024-09-27T00:34:04.538-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : drop sequence if exists seq_paciente
+2024-09-27T00:34:04.538-03:00  WARN 2452 --- [medico] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-27T00:34:04.538-03:00  WARN 2452 --- [medico] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "seq_paciente" does not exist, skipping
+2024-09-27T00:34:04.547-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : create sequence seq_medico start with 1 increment by 50
+2024-09-27T00:34:04.549-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : create sequence seq_paciente start with 1 increment by 50
+2024-09-27T00:34:04.552-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : create table medico (data_contratacao date, salario numeric(17,2) not null, id_medico bigint not null, nome varchar(255) not null, primary key (id_medico))
+2024-09-27T00:34:04.558-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : create table paciente (data_nascimento date, internacao numeric(17,2) not null, id_paciente bigint not null, nomep varchar(255) not null, primary key (id_paciente))
+2024-09-27T00:34:04.561-03:00  INFO 2452 --- [medico] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-27T00:34:04.866-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : select nextval('seq_medico')
+2024-09-27T00:34:04.903-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : insert into medico (data_contratacao,nome,salario,id_medico) values (?,?,?,?)
+2024-09-27T00:34:04.916-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : select nextval('seq_medico')
+2024-09-27T00:34:04.917-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : insert into medico (data_contratacao,nome,salario,id_medico) values (?,?,?,?)
+2024-09-27T00:34:04.920-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : select nextval('seq_paciente')
+2024-09-27T00:34:04.921-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : insert into paciente (data_nascimento,internacao,nomep,id_paciente) values (?,?,?,?)
+2024-09-27T00:34:04.923-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : select nextval('seq_paciente')
+2024-09-27T00:34:04.924-03:00 DEBUG 2452 --- [medico] [restartedMain] org.hibernate.SQL                        : insert into paciente (data_nascimento,internacao,nomep,id_paciente) values (?,?,?,?)
+2024-09-27T00:34:04.983-03:00  WARN 2452 --- [medico] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-27T00:34:05.346-03:00  INFO 2452 --- [medico] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-27T00:34:05.393-03:00  INFO 2452 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-27T00:34:05.404-03:00  INFO 2452 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : Started MedicoApplication in 4.137 seconds (process running for 4.516)
+2024-09-27T00:35:44.588-03:00  INFO 2452 --- [medico] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-27T00:35:44.588-03:00  INFO 2452 --- [medico] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-27T00:35:44.589-03:00  INFO 2452 --- [medico] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-27T00:35:44.745-03:00 DEBUG 2452 --- [medico] [http-nio-8080-exec-1] org.hibernate.SQL                        : select p1_0.id_paciente,p1_0.data_nascimento,p1_0.internacao,p1_0.nomep from paciente p1_0
+2024-09-27T00:36:12.455-03:00 DEBUG 2452 --- [medico] [http-nio-8080-exec-3] org.hibernate.SQL                        : select m1_0.id_medico,m1_0.data_contratacao,m1_0.nome,m1_0.salario from medico m1_0
+2024-09-27T00:36:22.402-03:00 DEBUG 2452 --- [medico] [http-nio-8080-exec-4] org.hibernate.SQL                        : select m1_0.id_medico,m1_0.data_contratacao,m1_0.nome,m1_0.salario from medico m1_0
+2024-09-27T00:36:34.227-03:00  INFO 2452 --- [medico] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-27T00:36:34.231-03:00  INFO 2452 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-27T00:36:34.234-03:00  INFO 2452 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

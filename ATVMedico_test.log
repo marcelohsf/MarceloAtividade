@@ -1,0 +1,29 @@
+2024-09-27T00:33:09.430-03:00  INFO 12788 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : Starting MedicoApplication using Java 17.0.10 with PID 12788 (C:\Users\Victor\Desktop\medico\target\classes started by Vitinho in C:\Users\Victor\Desktop\medico)
+2024-09-27T00:33:09.436-03:00  INFO 12788 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : The following 1 profile is active: "test"
+2024-09-27T00:33:09.504-03:00  INFO 12788 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-27T00:33:09.505-03:00  INFO 12788 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-27T00:33:09.976-03:00  INFO 12788 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-27T00:33:10.024-03:00  INFO 12788 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2024-09-27T00:33:10.765-03:00  INFO 12788 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-27T00:33:10.776-03:00  INFO 12788 --- [medico] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-27T00:33:10.776-03:00  INFO 12788 --- [medico] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-27T00:33:10.825-03:00  INFO 12788 --- [medico] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-27T00:33:10.825-03:00  INFO 12788 --- [medico] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1319 ms
+2024-09-27T00:33:10.857-03:00  INFO 12788 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-27T00:33:11.059-03:00  INFO 12788 --- [medico] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ATVMedico user=SA
+2024-09-27T00:33:11.060-03:00  INFO 12788 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-27T00:33:11.066-03:00  INFO 12788 --- [medico] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ATVMedico'
+2024-09-27T00:33:11.212-03:00  INFO 12788 --- [medico] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-27T00:33:11.266-03:00  INFO 12788 --- [medico] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-27T00:33:11.314-03:00  INFO 12788 --- [medico] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-27T00:33:11.598-03:00  INFO 12788 --- [medico] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-27T00:33:12.266-03:00  INFO 12788 --- [medico] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-27T00:33:12.286-03:00  INFO 12788 --- [medico] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-27T00:33:12.717-03:00  WARN 12788 --- [medico] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-27T00:33:13.019-03:00  INFO 12788 --- [medico] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-27T00:33:13.058-03:00  INFO 12788 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-27T00:33:13.066-03:00  INFO 12788 --- [medico] [restartedMain] com.curso.medico.MedicoApplication       : Started MedicoApplication in 3.98 seconds (process running for 4.342)
+2024-09-27T00:33:50.966-03:00  INFO 12788 --- [medico] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-27T00:33:50.966-03:00  WARN 12788 --- [medico] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-27T00:33:50.966-03:00  INFO 12788 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-27T00:33:50.966-03:00  INFO 12788 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
